@@ -1,3 +1,5 @@
 dash==2.9.3
 pandas
 gunicorn
+dash_bootstrap_components
+plotly.express
