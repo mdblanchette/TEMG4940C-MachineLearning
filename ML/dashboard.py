@@ -5,7 +5,7 @@ import pandas as pd
 import plotly.express as px
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.LUX], suppress_callback_exceptions=True)
-
+server = app.server
 # Part 1d Setup
 part1d_df = pd.read_csv('./assets/part1d.csv')
 part1d_income_histogram = px.histogram(part1d_df, x='Income', nbins=20, title='Income Distribution')
